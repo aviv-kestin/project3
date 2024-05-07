@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Air Quality</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <div id="start-button-container">
+        <button id="start-button" onclick="startApp()">press here to start</button>
+    </div>
+   
+   <div class="text-container">
+    <p id="city-title">New York City</p>
+    <input type="text" id="city-input" placeholder="enter city name">
+    <button id="search-button" onclick="getWeatherAndAirQuality(document.getElementById('city-input').value)">Get Air Quality</button>
+    <div id="weather-container"></div>
+    
+    <p id="current-time"></p>
+    <div id="aqi"></div>
+    </div>
+
+    <div id="mute-button" onclick="toggleMute()">
+        <p id="mute-text">mute</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tone"></script>
+    <script src="https://unpkg.com/tone"></script> <!-- Include Tone.js -->
+    <script src="script.js"></script> <!-- Your script file -->
+    
+</body>
+</html>
